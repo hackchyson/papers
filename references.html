@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>references</title>
+<!-- 2019-08-13 Tue 17:51 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Hack Chyson" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">references</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. You Only Look Once: Unified, Real-Time Object Detection</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Introduction</a></li>
+<li><a href="#sec-1-2">1.2. Unified Detections</a>
+<ul>
+<li><a href="#sec-1-2-1">1.2.1. Network Design</a></li>
+<li><a href="#sec-1-2-2">1.2.2. Training</a></li>
+<li><a href="#sec-1-2-3">1.2.3. Limitations of YOLO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> You Only Look Once: Unified, Real-Time Object Detection</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+How?<br  />
+We frame object detection as a regression problem to spatically separated bounding boxes and associated class probabilites. A single neural network predicts bounding boxes and class probabilities directly from full images in one evaluation. Since the whole detection pipeline is a single network, it can be optimized end-to-end directly on detection performance.<br  />
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Introduction</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<div class="figure">
+<p><img src="pics/yolo-figure1.png" alt="yolo-figure1.png" /><br  />
+</p>
+</div>
+
+<p>
+Benefits:<br  />
+</p>
+<ol class="org-ol">
+<li>YOLO extremely fast.<br  />
+</li>
+<li>YOLO reasons globally about the image when make predictions.<br  />
+</li>
+<li>YOLO learns generalizable representations of objects.<br  />
+</li>
+</ol>
+
+<p>
+Disadvantage:<br  />
+YOLO logs behind state-of-art detection systems in accuracy.<br  />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Unified Detections</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+end-to-end<br  />
+</p>
+
+<p>
+At traning time:<br  />
+</p>
+<ol class="org-ol">
+<li>Divide the input image into an \(S \times S\) grid. If the center of an object falls into a grid cell, that grid cell is responsible for detecting that object.<br  />
+</li>
+<li>Each grid cell predicts \(B\) bounding boxes and confidence scores for those boxes. \(Pr(Object) * IOU_{pred}^{truth}\)<br  />
+</li>
+<li>Each bounding box consists of 5 predictions: \(x,y,w,h\) and confidence.<br  />
+</li>
+<li>Each grid cell also predicts C conditional class probabilities, \(Pr(Class_i |Object)\).<br  />
+</li>
+</ol>
+
+
+<div class="figure">
+<p><img src="pics/yolo-figure2.png" alt="yolo-figure2.png" /><br  />
+</p>
+</div>
+
+<p>
+At test time:<br  />
+class-specific confidence scores for each box is given by:<br  />
+</p>
+\begin{equation}
+Pr(Class_i|Object) * Pr(Object) * IOU_{pred}^{truth} = Pr(Class_i)*IOU_{pred}^{truth}
+\end{equation}
+</div>
+
+<div id="outline-container-sec-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> Network Design</h4>
+<div class="outline-text-4" id="text-1-2-1">
+
+<div class="figure">
+<p><img src="pics/yolo-figure3.png" alt="yolo-figure3.png" /><br  />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> Training</h4>
+<div class="outline-text-4" id="text-1-2-2">
+</div><ol class="org-ol"><li><a id="sec-1-2-2-1" name="sec-1-2-2-1"></a>activation function: (leaky rectified linear activation)<br  /><div class="outline-text-5" id="text-1-2-2-1">
+\begin{equation}
+\phi(x) = 
+\begin{cases}
+x, \quad \mathrm{if} x > 0 \\
+0.1x, \quad \mathrm{otherwise}
+\end{cases}
+\end{equation}
+</div>
+</li>
+<li><a id="sec-1-2-2-2" name="sec-1-2-2-2"></a>loss (sum-quared error)<br  /><div class="outline-text-5" id="text-1-2-2-2">
+<p>
+We use sum-squared error because it is easy to optimize, however it does not perfectly align with our goal of maximizing average precision. It weights localization error equally with classification error which may not be ideal. Also, in every image many grid cells do not contain any object. This pushes the “confidence” scores of those cells towards zero, often overpowering the gradient from cells that do contain objects. This can lead to model instability, causing training to diverge early on.<br  />
+</p>
+
+<p>
+To remedy this, we increase the loss from bounding box coordinate predictions and decrease the loss from confidence predictions for boxes that don’t contain objects. We use two parameters, \(\lambda_{coord}\) and \(\lambda_{noobj}\) to accomplish this. We set \(\lambda_{coord} = 5 \ \mathrm{and}\ \lambda_{noobj} = .5\).<br  />
+</p>
+
+<p>
+Sum-squared error also equally weights errors in large boxes and small boxes. Our error metric should reflect that small deviations in large boxes matter less than in small boxes. To partially address this we predict the square root of the bounding box width and height instead of the width and height directly.<br  />
+</p>
+
+\begin{equation}
+\begin{matrix}
+\lambda_{coord}\sum_{i=0}^{S^2}\sum_{j=0}^B \mathbb{1}_{i,j}^{obj}[(x_i-\hat{x}_i)^2+(y_i-\hat{y}_i)^2 + (\sqrt{w_i}-\sqrt{\hat{w}_i})^2 + (\sqrt{h_i}-\sqrt{\hat{h}_i})^2] \\
++ \sum_{i=0}^{S^2}\sum_{j=0}^B \mathbb{1}_{i,j}^{obj}(C_i-\hat{C}_i)^2 \\
++ \lambda_{noobj} \sum_{i=0}^{S^2}\sum_{j=0}^B \mathbb{1}_{i,j}^{noobj}(C_i-\hat{C}_i)^2 \\
++ \sum_{i=0}^{S^2}\mathbb{1}_i^{obj}\sum_{c\in \mathrm{classes}}(p_i(c)-\hat{p}_i(c))^2
+\end{matrix}
+\end{equation}
+<p>
+where \(\mathbb{1}_i^{obj}\) denotes if object appears in cell \(i\) and \(1_{i,j}^{obj}\) denotes that the $j$th bounding box predictor in cell \(i\) is "responsible" for that prediction.<br  />
+</p>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">epochs</td>
+<td class="right">135</td>
+</tr>
+
+<tr>
+<td class="left">batch size</td>
+<td class="right">64</td>
+</tr>
+
+<tr>
+<td class="left">mementum</td>
+<td class="right">0.9</td>
+</tr>
+
+<tr>
+<td class="left">dacay</td>
+<td class="right">0.0005</td>
+</tr>
+
+<tr>
+<td class="left">dropout</td>
+<td class="right">0.5</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+learning rate:<br  />
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">first epochs</td>
+<td class="left">\(10^{-3} \rightarrow 10^{-2}\)</td>
+</tr>
+
+<tr>
+<td class="left">75 epochs</td>
+<td class="left">\(10^{-2}\)</td>
+</tr>
+
+<tr>
+<td class="left">30 epochs</td>
+<td class="left">\(10^{-3}\)</td>
+</tr>
+
+<tr>
+<td class="left">30 epochs</td>
+<td class="left">\(10^{-4}\)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li></ol>
+</div>
+
+<div id="outline-container-sec-1-2-3" class="outline-4">
+<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> Limitations of YOLO</h4>
+<div class="outline-text-4" id="text-1-2-3">
+<ol class="org-ol">
+<li>YOLO imposes strong spatial constraints on bounding box predictions since each grid cell only predicts two boxes and can only have one class.<br  />
+</li>
+<li>Since our model learns to predict bounding boxes from data, it struggles to generalize to objects in new or unusual aspect ratios or configurations.<br  />
+</li>
+<li>Our loss function treats errors the same in small bounding boxes versus large bounding boxes. A small error in a large box is generally benign but a small error in a small box has a much greater effect on IOU. Our main source of error is incorrect localizations.<br  />
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Hack Chyson</p>
+<p class="date">Created: 2019-08-13 Tue 17:51</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
